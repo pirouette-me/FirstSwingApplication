@@ -1,3 +1,5 @@
+package me.pirouette.swing.firstswingapplication;
+
 import javax.swing.*;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import java.awt.*;
