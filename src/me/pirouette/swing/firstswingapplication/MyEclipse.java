@@ -4,30 +4,26 @@ import javax.swing.*;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import java.awt.*;
 
-public class MyWindow extends JFrame {
-    public MyWindow() throws HeadlessException {
+public class MyEclipse extends JFrame {
+    public MyEclipse() throws HeadlessException {
         super("My first Swing application");
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setSize(600,400);
         this.setLocationRelativeTo(null);
         JPanel contentPane = (JPanel) this.getContentPane();
-
-        contentPane.setLayout(null);
+        //contentPane.setLayout(new BorderLayout());
 
         JButton btnPushMe = new JButton("Push me");
-        btnPushMe.setBounds(200, 20, 160,30);
-        contentPane.add(btnPushMe);
+        contentPane.add(btnPushMe, BorderLayout.NORTH);
 
         JButton btnClickMe = new JButton("Click me");
-        btnClickMe.setBounds(200, 70, 160,30);
-        contentPane.add(btnClickMe);
+        btnClickMe.setPreferredSize(new Dimension(200, 0));
+        contentPane.add(btnClickMe, BorderLayout.WEST);
 
         JCheckBox chkChechMe = new JCheckBox("Check me");
-        chkChechMe.setBounds(200, 120, 160,30);
-        contentPane.add(chkChechMe);
+        contentPane.add(chkChechMe, BorderLayout.SOUTH);
 
-        JTextField txtEditMe= new JTextField("Edit me");
-        txtEditMe.setBounds(200,170,160,30);
+        JTextArea txtEditMe= new JTextArea("Edit me");
         contentPane.add(txtEditMe);
 
     }
@@ -36,7 +32,7 @@ public class MyWindow extends JFrame {
         // Apply a look 'n' feel
         UIManager.setLookAndFeel(new NimbusLookAndFeel());
         // Start my window
-        MyWindow myWindow = new MyWindow();
+        MyEclipse myWindow = new MyEclipse();
         myWindow.setVisible(true);
     }
 }
