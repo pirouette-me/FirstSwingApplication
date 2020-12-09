@@ -20,8 +20,8 @@ public class MyEclipse extends JFrame {
         btnClickMe.setPreferredSize(new Dimension(200, 0));
         contentPane.add(btnClickMe, BorderLayout.WEST);
 
-        JCheckBox chkChechMe = new JCheckBox("Check me");
-        contentPane.add(chkChechMe, BorderLayout.SOUTH);
+        JCheckBox chkCheckMe = new JCheckBox("Check me");
+        contentPane.add(chkCheckMe, BorderLayout.SOUTH);
 
         JTextArea txtEditMe= new JTextArea("Edit me");
         contentPane.add(txtEditMe);

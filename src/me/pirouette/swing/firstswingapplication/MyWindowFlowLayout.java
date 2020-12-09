@@ -19,8 +19,8 @@ public class MyWindowFlowLayout extends JFrame {
         JButton btnClickMe = new JButton("Click me");
         contentPane.add(btnClickMe);
 
-        JCheckBox chkChechMe = new JCheckBox("Check me");
-        contentPane.add(chkChechMe);
+        JCheckBox chkCheckMe = new JCheckBox("Check me");
+        contentPane.add(chkCheckMe);
 
         JTextField txtEditMe= new JTextField("Edit me");
         txtEditMe.setPreferredSize(new Dimension(120, 30));

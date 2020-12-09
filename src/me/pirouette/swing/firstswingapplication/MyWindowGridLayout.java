@@ -19,8 +19,8 @@ public class MyWindowGridLayout extends JFrame {
         JButton btnClickMe = new JButton("Click me");
         contentPane.add(btnClickMe);
 
-        JCheckBox chkChechMe = new JCheckBox("Check me");
-        contentPane.add(chkChechMe);
+        JCheckBox chkCheckMe = new JCheckBox("Check me");
+        contentPane.add(chkCheckMe);
 
         JTextField txtEditMe= new JTextField("Edit me");
         contentPane.add(txtEditMe);

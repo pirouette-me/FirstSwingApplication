@@ -38,8 +38,8 @@ public class MyWindowBorderLayout extends JFrame {
         JButton btnClickMe = new JButton("Click me");
         toolBar.add(btnClickMe);
 
-        JCheckBox chkChechMe = new JCheckBox("Check me");
-        toolBar.add(chkChechMe);
+        JCheckBox chkCheckMe = new JCheckBox("Check me");
+        toolBar.add(chkCheckMe);
 
         JTextField txtEditMe= new JTextField("Edit me");
         txtEditMe.setPreferredSize(new Dimension(140,30));
