@@ -58,6 +58,7 @@ public class MyWindowFlowLayoutListeners4 extends JFrame {
 
     private void btnPushListener(ActionEvent e) {
         System.out.println("Autre bouton cliqué");
+
     }
 
     public static void main(String[] args) throws UnsupportedLookAndFeelException {
